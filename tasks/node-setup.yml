@@ -24,8 +24,8 @@
   - install
   - node
 
-- name: npmjs global settings export path in case I don't have dotfiles installed
-  shell: export PATH=~/.local/.npm-global/bin:$PATH
+- name: npmjs global settings export path
+  content: export PATH=~/.local/.npm-global/bin:$PATH
   tags:
   - install
   - node
@@ -38,13 +38,6 @@
   tags:
     - install
     - node
-
-- name: npmjs global settings export path in case I don't have dotfiles installed
-  shell: export PATH=~/.local/.npm-global/bin:$PATH
-  tags:
-  - install
-  - node
-  - npm-path
 
 - name: Install correct version of Node
   shell: n 14
