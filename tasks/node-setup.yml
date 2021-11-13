@@ -24,13 +24,6 @@
   - install
   - node
 
-- name: npmjs global settings export path
-  content: export PATH=~/.local/.npm-global/bin:$PATH
-  tags:
-  - install
-  - node
-  - npm-path
-
 - name: Install N
   npm:
     name: n
@@ -40,7 +33,7 @@
     - node
 
 - name: Install correct version of Node
-  shell: n 14
+  shell: ~/.local/.npm-global/bin/n 14
   tags:
     - install
     - node
