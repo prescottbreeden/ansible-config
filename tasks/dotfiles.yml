@@ -1,0 +1,13 @@
+- name: Get NVIM config
+  ansible.builtin.git:
+    repo: 'https://github.com/prescottbreeden/nvim'
+    dest: '~/.config/'
+  tags:
+    - dotfiles
+
+# - name: Get ZSH theme
+#   ansible.builtin.git:
+#     repo: 'https://github.com/prescottbreeden/nvim'
+#     dest: '~/.config/'
+#   tags:
+#     - dotfiles

@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
 
 ## Install ansible
+sudo apt update -y
+sudo apt install -y curl git software-properties-common
 sudo apt-add-repository -y ppa:ansible/ansible
-sudo apt-get update -y
-sudo apt-get install -y curl git software-properties-common ansible
+sudo apt install -y ansible
 
 ## pull ansible
-# sudo ansible-pull -U https://github.com/prescottbreeden/ansible-config.git
+sudo ansible-pull -U https://github.com/prescottbreeden/ansible-config.git
