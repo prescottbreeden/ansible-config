@@ -1,0 +1,6 @@
+- name: Install System Nvidia Packages
+  become: true
+  apt:
+    name: [ "nvidia-settings" ]
+  tags:
+    - nvidia

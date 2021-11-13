@@ -1,0 +1,21 @@
+- name: Git personal setup email
+  git_config:
+    name: user.email
+    scope: global
+    value: "prescott.breeden@gmail.com"
+  tags:
+  - git-personal
+- name: Git personal setup name
+  git_config:
+    name: user.name
+    scope: global
+    value: "prescottbreeden"
+  tags:
+  - git-personal
+- name: Git default branch
+  git_config:
+    name: init.defaultname
+    scope: global
+    value: "main"
+  tags:
+  - git-personal
